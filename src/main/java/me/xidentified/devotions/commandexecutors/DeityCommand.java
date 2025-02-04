@@ -86,12 +86,23 @@ public class DeityCommand implements CommandExecutor, TabCompleter {
     }
 
     private handleCreate(Player player, String[] args) {
-        //TODO
+        if (args.length < 2){
+            player.sendMessage("You need to specify a name for the deity");
+        }
+
+        //TODO - Add a check to make sure only one is created per player.
+        //TODO - Add a check to make sure deity name is valid
+        //TODO - Add a check to make sure deity name is unique
+        //TODO - Add a check to make sure deity name is not reserved
+        //TODO - Figure out a way to store the data (Currently YAML)
+        //TODO - Above store it as UUID per player / then name of Dieity?
+        //TODO - Take into account for spaces in name
+
 
     }
 
     private handleModify(Player player, String[] args) {
-        //TODO
+        //TODO - Write the whole command / interface?
     }
 
 
