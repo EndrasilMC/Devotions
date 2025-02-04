@@ -85,7 +85,6 @@ public class DeityCommand implements CommandExecutor, TabCompleter {
         }
     }
 
-
     private handleCreate(Player player, String[] args) {
         //TODO
 
