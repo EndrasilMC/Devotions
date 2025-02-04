@@ -62,6 +62,16 @@ public class DeityCommand implements CommandExecutor, TabCompleter {
             case "select" -> {
                 return handleSelect(player, args);
             }
+
+            //VERTS CODE - THIS WILL NEED AMENDING LATER TO USE MYSQL
+            case "create" ->{
+                return handleCreate(player,args)
+            }
+
+            case "modify" ->{
+                //TODO
+            }
+
             case "info" -> {
                 return handleInfo(player, args);
             }
@@ -74,6 +84,18 @@ public class DeityCommand implements CommandExecutor, TabCompleter {
             }
         }
     }
+
+
+    private handleCreate(Player player, String[] args) {
+        //TODO
+
+    }
+
+    private handleModify(Player player, String[] args) {
+        //TODO
+    }
+
+
 
     private boolean handleSelect(Player player, String[] args) {
         if (args.length < 2) {
